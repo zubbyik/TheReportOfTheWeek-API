@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const mongo_uri = process.env.MONGOLAB_URI || 'mongodb://localhost/report'
+const mongo_uri = process.env.MONGODB_URI || 'mongodb://localhost/report'
 
 mongoose.Promise = Promise
 mongoose.connect(mongo_uri, (err, res) => {
